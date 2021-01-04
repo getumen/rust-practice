@@ -1,0 +1,14 @@
+[package]
+authors = ["yoshihiro <n.yoshihiro.jp@gmail.com>"]
+edition = "2018"
+name = "abc186"
+version = "0.1.0"
+
+# dependencies added to new project
+[dependencies]
+num = "0.3.1"
+num-integer = "0.1.44"
+
+[profile.release]
+lto = true
+panic = 'abort'
